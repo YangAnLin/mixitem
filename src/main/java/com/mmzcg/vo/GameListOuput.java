@@ -8,8 +8,16 @@ import java.util.Date;
 @Data
 public class GameListOuput {
 
+    private Integer id;
+
     @ApiModelProperty("用户名")
     private String account;
+
+    @ApiModelProperty(value = "昵称")
+    private String nickName;
+
+    @ApiModelProperty(value = "生日")
+    private Date birthday;
 
     @ApiModelProperty("层级ID")
     private Integer levelId;

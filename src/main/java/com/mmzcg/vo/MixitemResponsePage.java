@@ -17,6 +17,9 @@ public class MixitemResponsePage<T> {
     @ApiModelProperty(value = "当前页",notes = "默认 1")
     private long current = 1;
 
+    @ApiModelProperty(value = "总页数",notes = "默认 0")
+    private long pages;
+
     @ApiModelProperty("搜索条件参数")
     private List<T> data;
     

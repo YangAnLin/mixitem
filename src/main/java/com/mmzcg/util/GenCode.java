@@ -13,7 +13,7 @@ import com.baomidou.mybatisplus.generator.engine.VelocityTemplateEngine;
 
 public class GenCode {
 
-    private static final String TABLE_NAMES = "account";
+    private static final String TABLE_NAMES = "menu";
 
     public static void main(String[] args) {
         // 代码生成器

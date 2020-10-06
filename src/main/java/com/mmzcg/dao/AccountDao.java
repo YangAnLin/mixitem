@@ -22,13 +22,14 @@ public class AccountDao {
 
         GameListInput searchParams = parentAccountId.getSearchParams();
 
-        IPage<GameListOuput> pages = accountMapper.selectGameList(new Page<>(parentAccountId.getCurrent(), parentAccountId.getCurrent()), searchParams);
+        IPage<GameListOuput> pages = accountMapper.selectGameList(new Page<>(parentAccountId.getCurrent(), parentAccountId.getSize()), searchParams);
 
         MixitemResponsePage<GameListOuput> objectMixitemPage = new MixitemResponsePage<>();
         objectMixitemPage.setTotal(pages.getTotal());
         objectMixitemPage.setSize(pages.getSize());
         objectMixitemPage.setCurrent(pages.getCurrent());
         objectMixitemPage.setData(pages.getRecords());
+        objectMixitemPage.setPages(pages.getPages());
 
 
         return Response.successData(objectMixitemPage);

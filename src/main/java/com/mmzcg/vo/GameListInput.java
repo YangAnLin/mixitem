@@ -11,8 +11,8 @@ public class GameListInput {
     @ApiModelProperty("层级ID")
     private Integer levelId;
 
-    @ApiModelProperty("状态")
-    private Integer running;
+    @ApiModelProperty(value = "状态",notes = "-1:全部")
+    private Integer running = -1;
 
     @ApiModelProperty("注册IP")
     private String registerIp;
