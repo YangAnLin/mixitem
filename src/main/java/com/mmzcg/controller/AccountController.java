@@ -24,7 +24,7 @@ public class AccountController extends BaseController {
     private AccountService accountService;
 
     @PostMapping("/list")
-    @ApiOperation("游戏用户管理列表")
+    @ApiOperation("用户管理列表")
     public Response<MixitemResponsePage<GameListOuput>> gameList(@RequestBody MixitemPage<GameListInput> gameListInput) {
         // 设置业主ID
         gameListInput.getSearchParams().setParentAccountId(getParentAccountId());
