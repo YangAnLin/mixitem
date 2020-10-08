@@ -31,30 +31,13 @@
 //@Component
 //@Slf4j
 //public class BgApi implements ApiInterface {
-//	@Autowired
-//	private ChannelParamsConfig channelParamsConfig;
+//
 //
 //	private SimpleDateFormat beijingTimeSdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 //	SimpleDateFormat usaTimeSdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 //	private String lastEndTime;
 //
-//	@Resource
-//	private AccountService accountService;
 //
-//	@Resource
-//	private AccountsServiceClient accountsServiceClient;
-//
-//	@Resource
-//	private TreasureServiceClient treasureServiceClient;
-//
-//	@Resource
-//	private NativeWebUtil nativeWebUtil;
-//
-//	@Resource
-//	private CleanShipUtil cleanShipUtil;
-//
-//	@Resource
-//	private GameRecordOtherESUtil gameRecordOtherESUtil;
 //
 //	/**
 //	 * 先创建会员，再登录游戏

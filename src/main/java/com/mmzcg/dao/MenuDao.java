@@ -1,14 +1,11 @@
 package com.mmzcg.dao;
 
-import cn.hutool.core.bean.BeanUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.mmzcg.entity.Menu;
 import com.mmzcg.mapper.MenuMapper;
-import com.mmzcg.vo.MenuList;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
 import java.util.List;
 
 @Service

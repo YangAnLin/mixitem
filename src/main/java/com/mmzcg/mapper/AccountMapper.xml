@@ -4,5 +4,17 @@
 
     <select id="selectGameList" resultType="com.mmzcg.vo.GameListOuput">
         select * from account
+        where 1=1 and parent_account_id = #{searchParams.parentAccountId}
+        <if test="searchParams!= null and searchParams.id != null">
+            id = #{searchParams.id}
+        </if>
+
+        <if test="searchParams!= null and searchParams.running != null and searchParams.running != -1 ">
+            running = #{searchParams.running}
+        </if>
+
+        <if test="searchParams!= null and searchParams.levelId != null">
+            level_id = #{searchParams.running}
+        </if>
     </select>
 </mapper>

@@ -91,7 +91,6 @@ public class GenCode {
         strategy.setControllerMappingHyphenStyle(true);
         // 是否生成实体时，生成字段注解
         strategy.setEntityTableFieldAnnotationEnable(true);
-//        strategy.setTablePrefix("tb_");  //需要截取不用的，比如我的表开头都有tb_,需要去掉后生成
         // 是否跳过视图
         strategy.setSkipView(false);
 
